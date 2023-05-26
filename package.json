@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/exaevil/aiUrls/issues"
   },
-  "homepage": "https://github.com/exaevil/aiUrls#readme"
+  "homepage": "https://github.com/exaevil/aiUrls#readme",
+  "dependencies": {
+    "@planetscale/database": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.2",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.1",
+    "sequelize-cli": "^6.6.0"
+  }
 }
