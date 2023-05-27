@@ -1,15 +1,10 @@
 {
   "development": {
-    "username": "le9dof0582flboabwb8d",
-    "password": "pscale_pw_ctcbULUbVmISKtArw5lnKgbvnCxpM03UgJjsDdhYhbS",
+    "username": "root",
+    "password": "",
     "database": "ai",
-    "host": "aws.connect.psdb.cloud",
-    "dialect": "mysql",
-    "dialectOptions": {
-      "ssl": {
-        "rejectUnauthorized": true
-      }
-    }
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",

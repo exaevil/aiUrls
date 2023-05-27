@@ -11,11 +11,8 @@ app.set("view engine", "ejs");
 // Routes
 app.use("/", routes);
 
-// Middleware to parse request bodies
 app.use(express.urlencoded({ extended: true }));
-// Serve static files from the 'public' directory
-// app.use(express.static("public"));
-// Handle POST request to upload a program
+
 app.post("/upload", async (req, res) => {
   await urls.create(req.body);
   console.log("Program uploaded successfully.");
