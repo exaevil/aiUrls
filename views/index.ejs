@@ -22,11 +22,19 @@
       .fade-in {
         animation: fadeIn 1s ease-in;
       }
+
+      .list-group-item:hover {
+        background-color: #f8f9fa;
+      }
+
+      .list-group-item a:hover {
+        color: blue;
+      }
     </style>
   </head>
   <body>
     <div class="container text-center">
-      <h2>Upload a Program</h2>
+      <h2>Add ur link here ..</h2>
       <form action="/upload" method="POST">
         <div class="mb-3">
           <label for="title" class="form-label">Title:</label>
@@ -51,7 +59,7 @@
         <button class="btn btn-primary" type="submit">Upload</button>
       </form>
 
-      <h1>Programs</h1>
+      <h1>===================</h1>
       <ul class="list-group">
         <% programs.forEach(function(program, index) { %>
         <li
@@ -60,7 +68,6 @@
         >
           <h3><%= program.title %></h3>
           <p>
-            Download Link:
             <a target="_blank" href="<%= program.downloadLink %>"
               ><%= program.downloadLink %></a
             >
